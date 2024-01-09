@@ -77,9 +77,8 @@ if check == True:
     try:
         temp2 = temp_df[temp_df[field2].str.contains(query2)]
         rows2 = temp2.shape[0]
-        samples2 = temp2[field2].unique().shape[0]
-        samples3 = \
-        pd.merge(pd.DataFrame(temp1["sample_name"].unique()), pd.DataFrame(temp2["sample_name"].unique()), on=0).shape[
+        samples2 = temp2["sample_name"].unique().shape[0]
+        samples3 = pd.merge(pd.DataFrame(temp1["sample_name"].unique()), pd.DataFrame(temp2["sample_name"].unique()), on=0).shape[
             0]
         st.markdown(f'''- The dataset has {rows2} rows for query 2 corresponding to {samples2} unique samples''',
                     unsafe_allow_html=True)
