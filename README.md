@@ -15,7 +15,7 @@ Following python packages are needed to run the code:
 
 - conda create --name environment_name python=3.10
 - pip install streamlit
-- conda install -c conda-forge tiledb-py 
+- conda install -c conda-forge -c bioconda -c tiledb tiledbvcf-py
 
 ### Instructions to run the app
 
