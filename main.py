@@ -82,7 +82,7 @@ if check == True:
             0]
         st.markdown(f'''- The dataset has {rows2} rows for query 2 corresponding to {samples2} unique samples''',
                     unsafe_allow_html=True)
-        st.markdown(f'''- Both the datasets have {samples2} unique samples in common''',
+        st.markdown(f'''- Both the datasets have {samples3} unique samples in common''',
                     unsafe_allow_html=True)
 
     except:
